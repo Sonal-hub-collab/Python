@@ -1,0 +1,87 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 90%;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: #667eea;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+.option {
+  background: #f1f1f1;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option:hover {
+  background: #ddd;
+}
+
+.selected {
+  background: #667eea;
+  color: white;
+}
+
+.correct {
+  background: #38a169;
+  color: white;
+}
+
+.wrong {
+  background: #e53e3e;
+  color: white;
+}
+
+#timer {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
